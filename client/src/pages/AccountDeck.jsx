@@ -1,5 +1,8 @@
 import { useState } from "react";
-
+import "../components/MacClearner";
+import "../components/WindowsCleanerPage";
+import "../components/LinuxClearnerPage";
+import { Link } from "react-router-dom";
 /* ─────────────────────────────────────────────
    AccountDeck Download Page
    Font: Plus Jakarta Sans
@@ -328,29 +331,64 @@ const PLATFORMS = [
 
 // ── Components ────────────────────────────────────────────────────────────
 function Card({ p }) {
-  return (
-    <div className="ad-card">
-      <div className="ad-icon-box" style={{ background: p.iconBg }}>{p.icon}</div>
-      <span className="ad-lbl" style={{ color: p.labelColor }}>{p.label}</span>
+  const cardContent = (
+    <>
+      <div className="ad-icon-box" style={{ background: p.iconBg }}>
+        {p.icon}
+      </div>
+
+      <span className="ad-lbl" style={{ color: p.labelColor }}>
+        {p.label}
+      </span>
+
       <h3>{p.title}</h3>
       <p>{p.desc}</p>
-      
+
+      {/* Download Button */}
       <a
         href={p.href}
         target="_blank"
         rel="noopener noreferrer"
         className={`ad-btn ${p.btnCls}`}
-        aria-label={`Download AccountDeck for ${p.label}`}
+        onClick={(e) => e.stopPropagation()} // 🔥 IMPORTANT
       >
         <DlIcon />
         Download {p.ext}
       </a>
+
       <div className="ad-note">
         <ShieldIcon />
         Latest version · Secure download
       </div>
-    </div>
+    </>
   );
+
+  // 🔥 Route mapping
+  if (p.key === "mac") {
+    return (
+      <Link to="/mac-cleaner" className="ad-card">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  if (p.key === "win") {
+    return (
+      <Link to="/windows-cleaner" className="ad-card">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  if (p.key === "lnx") {
+    return (
+      <Link to="/linux-cleaner" className="ad-card">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return <div className="ad-card">{cardContent}</div>;
 }
 
 function Header() {
