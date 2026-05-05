@@ -11,6 +11,7 @@ function App() {
       <Route path="/mac-cleaner" element={<MacCleaner />} />
       <Route path="/windows-cleaner" element={<WindowsCleanerPage />} />
       <Route path="/linux-cleaner" element={<LinuxCleanerPage />} />
+      
     </Routes>
   );
 }
