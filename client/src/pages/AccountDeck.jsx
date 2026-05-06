@@ -42,7 +42,7 @@ const PLATFORMS = [
     btn: "bg-gray-700 hover:bg-gray-800",
     route: "/mac-cleaner",
     download:
-      "https://www.dropbox.com/scl/fo/lddyhmiooy6gggv3kovjc/APWOTNTkdE6G-nR8LGdJk9o?rlkey=0qpffm6dz1ax44bz12cgky3dv&dl=1", // ✅ dl=1
+      "https://www.dropbox.com/scl/fi/1q5e4y1l9b6w04mqb8uyw/accountsdeck.app.zip?rlkey=8yddb4kcb7b194yv30hryld68&st=mdbc5n2q&dl=0", // ✅ dl=1
   },
 ];
 
