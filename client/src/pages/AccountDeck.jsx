@@ -324,7 +324,7 @@ const PLATFORMS = [
     title: "Download for macOS",
     desc: "Requires macOS 12 Monterey or later. Universal binary — Intel & Apple Silicon.",
     ext: ".dmg",
-    href: "https://www.dropbox.com/scl/fo/dubpg3o1q8awrxryk8ttu/AA8Og61zbOI3ioNdl4zEbao?rlkey=xcxdxrr1mpu1k4by4xm91zn7v&st=ddsnaldj&dl=0",
+    href: "https://www.dropbox.com/scl/fo/lddyhmiooy6gggv3kovjc/APWOTNTkdE6G-nR8LGdJk9o?rlkey=0qpffm6dz1ax44bz12cgky3dv&st=d5nhpaq4&dl=0",
     btnCls: "ad-mac",
   },
 ];
