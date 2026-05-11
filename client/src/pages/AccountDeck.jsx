@@ -44,16 +44,7 @@ const PLATFORMS = [
     download:
       "https://www.dropbox.com/scl/fi/1q5e4y1l9b6w04mqb8uyw/accountsdeck.app.zip?rlkey=8yddb4kcb7b194yv30hryld68&st=mdbc5n2q&dl=0", // ✅ dl=1
   },
-  {
-    key: "mac21",
-    label: "macOS 21",
-    title: "Download for macOS 21",
-    desc: "macOS Monterey or later.",
-    ext: ".dmg",
-    btn: "bg-gray-700 hover:bg-gray-800",
-    route: "/mac-cleaner",
-    download:"https://www.dropbox.com/scl/fo/wyiycn32lmjz5lb3e0bzu/AL_n1DDzNbRr7ntL14e0TPA?rlkey=83kfrch5jnev61zgqmby0kp7i&st=ybf4xzj6&dl=0", // ✅ dl=1
-  },
+
 
 ];
 
